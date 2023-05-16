@@ -12,9 +12,33 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         table{
-width: 600px;
-border-collapse: collapse;
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
 
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        caption{
+            font-size: 1.5em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgrey;
+        }
+
+
+        tbody > tr:nth-child(odd){ /*  (2n-1) */
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /* (2n) */
+            background-color: black;
+            color: white;
         }
 
         td,th{
@@ -36,7 +60,7 @@ border-collapse: collapse;
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!-- Anatomia para tabelas grandes 
-    
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -45,10 +69,11 @@ border-collapse: collapse;
                 TR,TD,TH -->
 
     <Table>
+        <caption>População das Unidades Federais</caption>
        <thead>
         <tr>
             <th>Estado</th>
-            <th>população</th>
+            <th style="width: 90px;">população</th>
         </tr>
        </thead>
        <tbody>
@@ -168,5 +193,6 @@ border-collapse: collapse;
         </tr>
        </tfoot>
     </Table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni id quod voluptatum, in repudiandae ratione! Quasi voluptate amet voluptas suscipit inventore saepe aliquid consequatur. Tempore numquam magnam vero incidunt architecto?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam a sit deleniti doloremque sint, excepturi quia vel iste odio quam optio, atque in fugit id, facilis ullam blanditiis nihil ad?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi atque explicabo ullam a nam alias libero autem accusantium enim consequuntur maiores amet, fuga ut tempore. Nihil velit veritatis deleniti delectus!</p>
 </body>
 </html>
